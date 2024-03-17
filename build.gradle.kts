@@ -8,8 +8,8 @@ group = "com.oznksoy.football"
 version = "1.0-SNAPSHOT"
 
 val springBootVersion = "3.2.3"    // Spring boot version
-val junitBOMVersion = "5.10.2"   // Collective junit project dependency alignments
-val mockitoVersion = "5.11.0"   // Mockito juniper
+val junitBOMVersion = "5.10.2"     // Collective junit project dependency alignments
+val mockitoVersion = "5.11.0"      // Mockito juniper
 
 repositories {
     mavenCentral()
