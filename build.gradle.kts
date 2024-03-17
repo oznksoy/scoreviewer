@@ -40,7 +40,6 @@ subprojects{
         useJUnitPlatform()
     }
 
-
 }
 
 
