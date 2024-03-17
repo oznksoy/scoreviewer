@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("org.springframework.boot") version "3.2.3"
+    id("org.springframework.boot") version "3.2.3" apply false
     id("io.spring.dependency-management") version "1.1.4"
 }
 
@@ -16,7 +16,8 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+    implementation(platform(org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES))
+    implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation(platform("org.junit:junit-bom:${junitBOMVersion}"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation(platform("org.mockito:mockito-junit-jupiter:${mockitoVersion}"))
